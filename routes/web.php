@@ -19,10 +19,6 @@ use App\Http\Controllers\AuthenticationController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 #examples the route method is used to send users to different webpages. the response can take strings, html text etc. can take params of status code and also take headers and their content type
 Route::get('/users', function () {
     return response("<h1>Hello Class</h1>", 200)->header('content-type', 'text/plain');
